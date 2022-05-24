@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pakko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="images/logo.png" alt=""></a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="#">Fonctionnalités</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">App iOS</a></li>
+            <li><a href="#" class="active">Me connecter</a></li>
+            <li><a href="#" class="btn">S'inscrire</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <div class="content">
+            <h1>Devis, factures, suivi, plafonds, cotisations</h1>
+            <p>Pakko accompagne les micro-entrepreneurs et leur fait gagner du temps !</p>
+            <div class="buttons">
+                <a href="#" class="btn">Créer mon compte</a>
+                <a href="#" class="btn2">Voir la vidéo</a>
+            </div>
+        </div>
+        <div class="imgBx">
+            <img src="images/main-block-img.png" alt="main">
+        </div>
+    </section>
+    <section class="analyse">
+        <div class="content">
+            <p class="p-header">Suivi et analyse</p>
+            <h1>Chiffre d'affaires, cotisations, plafonds ...</h1>
+            <p class="p-content">Visualisez et comparez vos chiffres sur l'année, le trimestre ou le mois. Chiffre d'affaires, cotisations, plafonds, TVA récoltée, encaissements et ce qu'il reste dans votre poche réellement à la fin !</p>
+            <p class="p-header-active">En savoir plus</p>
+        </div>
+        <div class="imgBx">
+            <img src="images/analyse.png" alt="analyse">
+        </div>
+    </section>
+    <section class="generate">
+        <div class="content">
+            <p class="p-header">Devis et facturation</p>
+            <h1>Générez vos factures et devis en un rien de temps</h1>
+            <p class="p-content">Générez des factures et des devis esthétiques. Suivez chaque étape importante : envoyé, en retard, payé… Générez des acomptes et des soldes en quelques clics seulement.</p>
+            <p class="p-header-active">En savoir plus</p>
+        </div>
+        <div class="imgBx">
+            <img src="images/generate.png" alt="analyse">
+        </div>
+    </section>
+    <section class="commerce">
+        <div class="content">
+            <p class="p-header">Gestion des projets et clients</p>
+            <h1>Gérez facilement vos clients et projets</h1>
+            <p class="p-content">Créez rapidement vos projets et clients. Suivez les chiffres clés pour chacun. Retrouvez tous vos documents plus facilement.</p>
+            <p class="p-header-active">En savoir plus</p>
+        </div>
+        <div class="imgBx">
+            <img src="images/commerce.png" alt="analyse">
+        </div>
+    </section>
+    <section class="cards">
+        <div class="cards-header">
+            <h1>Pensé pour les <br>micro-entrepreneurs</h1>
+        </div>
+        <div class="cards-block">
+            <div class="card">
+                <img src="images/card1.png" alt="">
+                <p>Gestion de l'ACRE</p>
+            </div>
+            <div class="card">
+                <img src="images/card2.png" alt="">
+                <p>Gestion de la TVA</p>
+            </div>
+            <div class="card">
+                <img src="images/card3.png" alt="">
+                <p>Calcul des cotisations</p>
+            </div>
+            <div class="card">
+                <img src="images/card4.png" alt="">
+                <p>Prélèvement libératoire</p>
+            </div>
+            <div class="card">
+                <img src="images/card5.png" alt="">
+                <p>Factures externes</p>
+            </div>
+            <div class="card">
+                <img src="images/card6.png" alt="">
+                <p>Plafonds CA & TVA</p>
+            </div>
+            <div class="card">
+                <img src="images/card7.png" alt="">
+                <p>Import de données</p>
+            </div>
+            <div class="card">
+                <img src="images/card8.png" alt="">
+                <p>Et plus à venir ...</p>
+            </div>
+        </div>
+    </section>
+    <section class="price-cards">
+        <div class="price-cards-header">
+            <h1>Des tarifs qui s'adaptent<br> à votre activité !</h1>
+            <div class="price-cards-header-buttons">
+                <a href="#" class="btn-light">Mensuel</a>
+                <a href="#">Annuel -16,5% 🎉</a>
+            </div>
+        </div>
+        <div class="price-cards-block">
+            <div class="price-card" id="price-card1">
+                <div class="price-card-header">
+                    <div class="price-card-header-left">
+                        <img src="images/logo-small.png" alt="">
+                        <h5>Gratuit</h5>
+                    </div>
+                    <div class="price-card-header-right" style="display: none;">
+                        <h1>5€<span> /mois</span></h1>
+                    </div>
+                </div>
+                <div class="price-card-content">
+                    <div class="price-card-preference">
+                        <img src="images/purple.png" alt="">
+                        <p>Gratuit</p>
+                    </div>
+                    <div class="price-card-preference">
+                        <img src="images/purple.png" alt="">
+                        <p>Jusqu'à 4 clients</p>
+                    </div>
+                    <div class="price-card-preference">
+                        <img src="images/purple.png" alt="">
+                        <p>Chiffre d'affaires jusqu'à 5 000€</p>
+                    </div>
+                </div>
+            </div>
+            <div class="price-card" id="price-card2">
+                <div class="price-card-header">
+                    <div class="price-card-header-left">
+                        <img src="images/logo-small.png" alt="">
+                        <h5>Gratuit</h5>
+                    </div>
+                    <div class="price-card-header-right">
+                        <h1>5€<span> /mois</span></h1>
+                    </div>
+                </div>
+                <div class="price-card-content">
+                    <div class="price-card-preference">
+                        <img src="images/green.png" alt="">
+                        <p>30 jours d'essai gratuits</p>
+                    </div>
+                    <div class="price-card-preference">
+                        <img src="images/green.png" alt="">
+                        <p>Clients illimités</p>
+                    </div>
+                    <div class="price-card-preference">
+                        <img src="images/green.png" alt="">
+                        <p>Chiffre d'affaires jusqu'à 30 000€</p>
+                    </div>
+                </div>
+            </div>
+            <div class="price-card" id="price-card3">
+                <div class="price-card-header">
+                    <div class="price-card-header-left">
+                        <img src="images/logo-small.png" alt="">
+                        <h5>Gratuit</h5>
+                    </div>
+                    <div class="price-card-header-right">
+                        <h1>12€<span> /mois</span></h1>
+                    </div>
+                </div>
+                <div class="price-card-content">
+                    <div class="price-card-preference">
+                        <img src="images/yellow.png" alt="">
+                        <p>30 jours d'essai gratuits</p>
+                    </div>
+                    <div class="price-card-preference">
+                        <img src="images/yellow.png" alt="">
+                        <p>Clients illimités</p>
+                    </div>
+                    <div class="price-card-preference">
+                        <img src="images/yellow.png" alt="">
+                        <p>Chiffre d'affaires illimité</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle')
+            const navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
