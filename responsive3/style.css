@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+
+}
+.nav-wrapper{
+    display: flex;
+    list-style: none;
+    padding: 50px 100px;
+    justify-content: space-between;
+}
+nav a{
+    color: #1F1534;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.nav-links{
+    display: flex;
+    margin-top: 10px;
+}
+.icon{
+    display: none;
+}
+.header_block{
+    display: flex;
+    padding: 50px 100px;
+}
+#consult_btn{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #458FF6;
+    color: #fff;
+    text-decoration: none;
+}
+#learnmore_btn{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #458FF6;
+    text-decoration: none;
+    border: 2px solid #458FF6;
+}
+.learn_more_button{
+    text-align: center;
+    margin-top: 20px;
+}
+.header_block p{
+    color: #7D7987;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.header_block_left{
+    margin-top: 175px;
+}
+.header_block_right{
+    margin-left: 250px;
+}
+.line{
+    background: #000000;
+    border-radius: 5px;
+    border: 2px solid #000;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+.whiteline{
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+.services_block_text p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+    margin-top: 33px;
+}
+.services_block{
+    padding: 50px 100px;
+    background-image: url(img/bgelement.png);
+    background-repeat: no-repeat;
+}
+.services_block_text{
+    text-align: center;
+}
+.services_block_card p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+    margin-top: 20px;
+}
+.services_block_card h2{
+    margin-top: 20px;
+}
+.services_block_card img{
+    margin-top: 20px;
+    width: 80px;
+    height: 72px;
+}
+.services_block_card{
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    margin-left: 30px;
+    padding: 50px;
+    background-color: #fff;
+}
+.services_block_cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.healthcare_block{
+    display: flex;
+    padding: 50px 100px;
+}
+.healthcare_block_right{
+    margin-top: 100px;
+    margin-left: 250px;
+}
+.healthcare_block_right p{
+    color: #7D7987;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.apps_block{
+    display: flex;
+    padding: 50px 100px;
+}
+.apps_block_left{
+    margin-top: 50px;
+}
+.apps_block_right{
+    margin-left: 250px;
+}
+.apps_block_left p{
+    color: #7D7987;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.reviews_block{
+    padding: 50px 100px;
+}
+.review_card{
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    padding: 50px;
+}
+.review_card_header{
+    text-align: center;
+}
+.review_card_header h1{
+    color: #fff;
+}
+.review_card_bottom{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+}
+.review_card_bottom h3{
+    color: #fff;
+    margin-left: 30px;
+}
+.review_card p{
+    color: #fff;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+.review_card_bottom_name{
+    margin-top: 50px;
+}
+.activecircle{
+    background: #5B9BF3;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+.circle{
+    background: #5B9BF3;
+    opacity: 0.3;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+.reviews_navigation{
+    display: inline-flex;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 40px;
+}
+.reviews_navigation i{
+    margin-left: 90px;
+    margin-right: 90px;
+    color: #458FF6;
+}
+.checkout_header{
+    text-align: center;
+}
+
+.checkout_block{
+    background-image: url(img/bgelement.png);
+}
+.checkout_cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px 100px;
+}
+.checkout_card{
+    width: 350px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    margin: 0 auto;
+}
+.checkout_card p{
+    color: #7D7987;
+    line-height: 28px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.checkout_card h3{
+    margin-top: 24px;
+}
+.checkout_card a{
+    color: #4089ED;
+    text-decoration: none;
+}
+.checkout_card_text{
+    padding: 30px;
+}
+footer{
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    display: flex;
+    margin-top: 200px;
+}
+.footer-info{
+    padding: 50px 100px;
+    width: 30%;
+}
+.footer-info p{
+    color: white;
+    margin-top: 25px;
+}
+.footer-links li{
+    list-style: none;
+}
+.footer-links a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-links h3{
+    color: #fff;
+}
+.footer-links{
+    padding: 50px 100px;
+}
+.footer-links ul{
+    margin-top: 25px;
+}
+@media(max-width:1100px){
+    .nav-links a{
+        display: none;
+    }
+    .nav-links a.icon{
+        display: block;
+        font-size: 20px;
+    }
+    .nav-links.responsive{
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    nav{
+        width: 100%;
+    }
+    header .nav-links.responsive{
+        height: 340px;
+        display: grid;
+    }
+    .nav-links.responsive a.icon{
+        position: absolute;
+        top: -50px;
+        right: -200px;
+    }
+    .nav-links.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .nav-wrapper{
+        padding: 50px;
+    }
+    .header_block{
+        display: grid;
+        padding: 0 100px;
+    }
+    .header_block img{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .header_block_left{
+        margin-top: 0;
+    }
+    .services_block_cards{
+        display: grid;
+        grid-template-columns: none;
+    }
+    .services_block_card{
+        margin-left: 0;
+    }
+    .services_block{
+        padding: 0;
+    }
+    .healthcare_block{
+        display: grid;
+    }
+    .apps_block{
+        display: grid;
+    }
+    .healthcare_block img{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .apps_block img{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .healthcare_block_right{
+        margin-left: 0;
+    }
+    .apps_block_right{
+        margin-left: 0;
+    }
+    .review_card_bottom{
+        padding: 0;
+        grid-template-columns: none;
+    }
+    .checkout_cards{
+        display: grid;
+        grid-template-columns: none;
+        padding: 0;
+    }
+    .reviews_block{
+        padding: 0;
+    }
+    .footer-info{
+        width: 100%;
+        padding: 0;
+    }
+    footer{
+        text-align: center;
+        display: grid;
+        padding-bottom: 200px;
+    }
+}

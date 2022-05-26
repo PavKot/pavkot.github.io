@@ -1,0 +1,17 @@
+        <div class="services_block_cards" style="margin-top: 20px;">
+            <div class="services_block_card" id="first-card">
+                <img src="img/4.png">
+                <h2>Details info</h2>
+                <p>Free consultation with our trusted doctors and get the best recomendations</p>
+            </div>
+            <div class="services_block_card">
+                <img src="img/5.png">
+                <h2>Emergency care</h2>
+                <p>You can get 24/7 urgent care for yourself or your children and your lovely family</p>
+            </div>
+            <div class="services_block_card">
+                <img src="img/6.png">
+                <h2>Tracking</h2>
+                <p>Track and save your medical history and health data </p>
+            </div>
+        </div>
