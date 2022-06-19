@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.68f6510f.css",
+    "main.js": "/static/js/main.21565a73.js",
+    "static/media/home-img.png": "/static/media/home-img.18b21ea3817e30757efc.png",
+    "static/media/nature-img.png": "/static/media/nature-img.10502f4731268715a254.png",
+    "static/media/card3.png": "/static/media/card3.9935def9c98ead7dfa54.png",
+    "static/media/food.png": "/static/media/food.7ea7813f31dd41d300b6.png",
+    "static/media/card1.png": "/static/media/card1.b5bb51d8ab6d972b4c88.png",
+    "static/media/card2.png": "/static/media/card2.6e47e9e64071f2cdf554.png",
+    "static/media/activities.png": "/static/media/activities.86dfacd5efa474d3b244.png",
+    "static/media/review1.png": "/static/media/review1.16045809c5e6e9bc6d57.png",
+    "index.html": "/index.html",
+    "main.68f6510f.css.map": "/static/css/main.68f6510f.css.map",
+    "main.21565a73.js.map": "/static/js/main.21565a73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68f6510f.css",
+    "static/js/main.21565a73.js"
+  ]
+}
