@@ -1,1 +1,109 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.378ab095.js"></script><link href="/static/css/main.fcce9e2f.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script type="text/javascript">$(document).ready((function(){$("a").on("click",(function(o){if(""!==this.hash){o.preventDefault();var t=this.hash;$("html, body").animate({scrollTop:$(t).offset().top},800,(function(){window.location.hash=t}))}}))}))</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Солідарна Молодь | Головна</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f57d04ca1f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/revealator-master/fm.revealator.jquery.css">
+    <script src="/revealator-master/jquery-1.11.3.min.js"></script>
+    <script src="/revealator-master/fm.revealator.jquery.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav class="NavbarItems" id="NavbarItems">
+                <div class="navbar-logo">
+                    <a href="/">
+                    <img src="images/logow.png" alt="">
+                    </a>
+                </div>
+                <div class="menuToggle" onclick="toggleMenu();">
+                    <i class="fa-solid fa-bars menu-icon"></i>
+                    <i class="fa-solid fa-caret-down close-icon"></i>
+                </div>
+                <ul class="nav-menu">
+                    
+                    <li><a href="/board">Правління</a></li>
+                    <li><a href="/regions/">Осередки</a></li>
+                    <li><a href="/activities/">Діяльність</a></li>
+                    <li><a href="/contacts/">Контакти</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdo_ygOYVjWknqLp6sK1I1b9_hCxGOCbvjKifsl33_DmE1DSw/viewform?usp=send_form">Долучитись</a></li>
+                    <li><a href="#" id="donate-button">DONATE</a></li>
+                    <div class="navbar-links-responsive-container">
+                        <li class="navbar-links-responsive"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        <li class="navbar-links-responsive"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li class="navbar-links-responsive"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="navbar-links-responsive"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    </div>
+                </ul>
+                <div class="navbar-links">
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="hero-section-image revealator-slidedown revealator-once revealator-delay">
+            <img src="images/hero-bg.png" alt="">
+        </div>
+        <div class="hero-section-content">
+            <h1>Найбільша молодіжка в Україні</h1>
+            <p>Вступай в Солідарну Молодь, і долучайся до крутих проєктів та інніціатив. Можливо саме тобі випаде нагода змінити країну на краще!</p>
+            <a href="#">Дізнатись більше</a>
+            <img src="images/hero-boardimg.png" alt="">
+        </div>
+    </section>
+    <section class="why-sm">
+        <div class="why-sm-header">
+            <h1>Чому Солідарна Молодь?</h1>
+            <div class="line"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="why-sm-wrapper">
+            <div class="why-sm-card revealator-zoomout revealator-delay1 revealator-once">
+                <a href="#"><i class="fas fa-rocket"></i></a> 
+                <h4>Платформа розвитку твоїх можливостей</h4>
+                <p>Солідарна Молодь - це організація, що об'єднує молодих активістів та активісток з різних регіонів України. </p>
+            </div>
+            <div class="why-sm-card revealator-zoomout revealator-delay1 revealator-once">
+                <a href="#"><i class="fas fa-rocket"></i></a> 
+                <h4>Розвиток навичок та лідерського потенціалу</h4>
+                <p>Учасники організації мають можливість брати участь в різних проектах, тренінгах та семінарах, що дозволяє підвищувати свої навички та розвивати лідерський потенціал.</p>
+            </div>
+            <div class="why-sm-card revealator-zoomout revealator-delay1 revealator-once">
+                <a href="#"><i class="fas fa-rocket"></i></a> 
+                <h4>Активна участь у політичному житті</h4>
+                <p>Солідарна Молодь є активним учасником політичного життя та має можливість впливати на різні процеси в Україні, зокрема на політичні та соціальні зміни.</p>
+            </div>
+            <div class="circle2"></div>
+        </div>
+    </section>
+    <section class="join-us">
+        <div class="join-us-content revealator-zoomout revealator-delay1 revealator-once">
+        <h1>Долучайся вже зараз!</h1>
+        <a href="#">Долучитись</a>
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+            <img src="images/logow.png" alt="">
+        </div>
+        <div class="navbar-links">
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
