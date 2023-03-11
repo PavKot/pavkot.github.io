@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery beforeAfter.js: Before After Image Viewer Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./../dist/beforeafter.jquery-1.0.0.min.js"></script>
+   <style>
+    html,* { font-family: 'Inter'; box-sizing: border-box; }
+body { background-color: #fafafa; line-height:1.6;}
+.lead { font-size: 1.5rem; font-weight: 300; }
+.container { margin: 150px auto; max-width: 960px; }
+.beforeAfter { height: 450px; }
+</style>
+</head>
+
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/other/before-after-image-viewer.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul><div id="carbon-block"></div>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+    <div class="container">
+
+<h1>jQuery beforeAfter.js: Before After Image Viewer Example</h1>
+            <p class="lead">A jQuer based, fully configurable, mobile-friendly before after viewer that can be used to compare two images with a draggable & swipeable slider.</p>
+        <div class="beforeAfter">
+
+            <img src="https://source.unsplash.com/owUOxR4Jq6I/960x450" />
+            <img src="https://source.unsplash.com/ILaRPrqovI0/960x450" />
+        </div>
+
+    </div>
+
+
+    <script>
+        $('.beforeAfter').beforeAfter({
+            movable: true,
+            clickMove: true,
+            position: 60,
+            separatorColor: '#fafafa',
+            bulletColor: '#fafafa',
+            onMoveStart: function(e) {
+                console.log(event.target);
+            },
+            onMoving: function() {
+                console.log(event.target);
+            },
+            onMoveEnd: function() {
+                console.log(event.target);
+            },
+        });
+    </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</body>
+
+</html>
