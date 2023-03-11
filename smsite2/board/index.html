@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Солідарна Молодь | Головна</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f57d04ca1f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../revealator-master/fm.revealator.jquery.css">
+    <script src="../revealator-master/jquery-1.11.3.min.js"></script>
+    <script src="../revealator-master/fm.revealator.jquery.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav class="NavbarItems" id="NavbarItems">
+                <div class="navbar-logo">
+                    <a href="./">
+                    <img src="images/logow.png" alt="">
+                    </a>
+                </div>
+                <div class="menuToggle" onclick="toggleMenu();">
+                    <i class="fa-solid fa-bars menu-icon"></i>
+                    <i class="fa-solid fa-caret-down close-icon"></i>
+                </div>
+                <ul class="nav-menu">
+                    
+                    <li><a href="./board/" class="active">Правління</a></li>
+                    <li><a href="./regions/">Осередки</a></li>
+                    <li><a href="./activities/">Діяльність</a></li>
+                    <li><a href="./contacts/">Контакти</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdo_ygOYVjWknqLp6sK1I1b9_hCxGOCbvjKifsl33_DmE1DSw/viewform?usp=send_form">Долучитись</a></li>
+                    <li><a href="#" class="active" id="donate-button">DONATE</a></li>
+                    <div class="navbar-links-responsive-container">
+                        <li class="navbar-links-responsive"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        <li class="navbar-links-responsive"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li class="navbar-links-responsive"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="navbar-links-responsive"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    </div>
+                </ul>
+                <div class="navbar-links">
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="board-members-section">
+        <div class="board-members-header">
+            <h1>Правління</h1>
+            <div class="line"></div>
+        </div>
+        <div class="board-members-cards">
+            <div class="board-member-card revealator-zoomout revealator-delay1 revealator-once">
+                <div class="board-member-card-header">
+                    <img src="members/dinara.png" alt="">
+                </div>
+                <div class="board-member-card-bottom">
+                    <h2>Дінара Габібуллаєва</h2>
+                    <h5>Голова організації</h5>
+                </div>
+            </div>
+            <div class="board-member-card revealator-zoomout revealator-delay1 revealator-once">
+                <div class="board-member-card-header">
+                    <img src="members/alex.png" alt="">
+                </div>
+                <div class="board-member-card-bottom">
+                    <h2>Олександр Решетков</h2>
+                    <h5>Перший заступник Голови організації</h5>
+                </div>
+            </div>
+            <div class="board-member-card revealator-zoomout revealator-delay1 revealator-once">
+                <div class="board-member-card-header">
+                    <img src="members/iryna.png" alt="">
+                </div>
+                <div class="board-member-card-bottom">
+                    <h2>Ірина Шатохіна</h2>
+                    <h5>Міжнародний секретар</h5>
+                </div>
+            </div>
+            <div class="board-member-card revealator-zoomout revealator-delay1 revealator-once">
+                <div class="board-member-card-header">
+                    <img src="members/arkadiy.png" alt="">
+                </div>
+                <div class="board-member-card-bottom">
+                    <h2>Аркадій Петросян</h2>
+                    <h5>Регіональний координатор</h5>
+                </div>
+            </div>
+            <div class="board-member-card revealator-zoomout revealator-delay1 revealator-once">
+                <div class="board-member-card-header">
+                    <img src="members/maryna.png" alt="">
+                </div>
+                <div class="board-member-card-bottom">
+                    <h2>Марина Бойко</h2>
+                    <h5>HR-Менеджер</h5>
+                </div>
+            </div>
+            <div class="board-member-card revealator-zoomout revealator-delay1 revealator-once">
+                <div class="board-member-card-header">
+                    <img src="members/daria.png" alt="">
+                </div>
+                <div class="board-member-card-bottom">
+                    <h2>Дарія Конох</h2>
+                    <h5>PR-менеджер</h5>
+                </div>
+            </div>
+            <div class="board-member-card revealator-zoomout revealator-delay1 revealator-once">
+                <div class="board-member-card-header">
+                    <img src="members/serhiy.png" alt="">
+                </div>
+                <div class="board-member-card-bottom">
+                    <h2>Сергій Сергєєв</h2>
+                    <h5>відповідальний за напрямок волонтерства</h5>
+                </div>
+            </div>
+            <div class="board-member-card revealator-zoomout revealator-delay1 revealator-once">
+                <div class="board-member-card-header">
+                    <img src="members/valesha.png" alt="">
+                </div>
+                <div class="board-member-card-bottom">
+                    <h2>Валерія Коровкіна</h2>
+                    <h5>Проєктний менеджер організації</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="join-us">
+        <div class="join-us-content revealator-zoomout revealator-delay1 revealator-once">
+        <h1>Долучайся вже зараз!</h1>
+        <a href="#">Долучитись</a>
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+            <img src="images/logow.png" alt="">
+        </div>
+        <div class="navbar-links">
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
