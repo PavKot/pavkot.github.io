@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 65px;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+}
+
+.main-container h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #222222;
+}
+
+.main-container h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 62px;
+  color: #222222;
+  margin-top: 15px;
+}
+
+.main-container h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #222222;
+  margin-top: 50px;
+}
+
+.main-container-content-follow p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.download-btn {
+  background: #0075ff;
+  border-radius: 10px;
+  padding: 14px 13px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+.main-container-content-links {
+  display: flex;
+  gap: 16px;
+}
+
+.main-container-content-follow {
+  display: flex;
+  margin-top: 24px;
+  padding-bottom: 64px;
+  align-items: center;
+  gap: 36px;
+}
+
+.main-container-content {
+  max-width: 500px;
+}
+
+.main-container-content-links a {
+  transition: 0.3s ease-in-out;
+}
+
+.main-container-content-links a:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+.interested-to-work {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background: #0075ff;
+  border-radius: 10px;
+  padding: 36px;
+  margin-top: 64px;
+}
+
+.interested-to-work h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 62px;
+  color: #f9f9f9;
+}
+
+.contact-btn {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 13px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0075ff;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .main-container {
+    flex-direction: column;
+    padding: 36px;
+    max-width: unset;
+    gap: 35px;
+  }
+
+  .main-container-profile img {
+    width: 100%;
+  }
+
+  .interested-to-work {
+    flex-direction: column;
+    padding: 36px;
+    gap: 35px;
+    max-width: 70%;
+  }
+}
