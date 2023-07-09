@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiwi | Eco Box</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Bebas+Neue&family=Galada&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav__menu">
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <div class="nav__menu__hiddenmenu__container">
+            <li id="second"><a href="#">Boxes</a></li>
+            <div class="nav__menu__hiddenmenu">
+              <li><a href="#">What's inside</a></li>
+              <li><a href="#">Kiwi Eco Box</a></li>
+            </div>
+          </div>
+        </ul>
+        <div class="nav__menu__logo">
+          <a href="#">
+            <img src="Images/logo.png" alt="" />
+          </a>
+        </div>
+        <ul class="navigation">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+        <ul class="navigation__mobile">
+          <li><a href="#">Home</a></li>
+          <div class="lines_img">
+            <img src="Images/line.png" alt="" />
+          </div>
+          <li><a href="#">What's inside</a></li>
+          <div class="lines_img">
+            <img src="Images/line.png" alt="" />
+          </div>
+          <li><a href="#">Kiwi Eco Box</a></li>
+          <div class="lines_img">
+            <img src="Images/line.png" alt="" />
+          </div>
+          <li><a href="#">About</a></li>
+          <div class="lines_img">
+            <img src="Images/line.png" alt="" />
+          </div>
+          <li><a href="#">Account</a></li>
+          <div class="circle__mobile1">
+            <img src="Images/circle5.png" alt="" />
+          </div>
+          <div class="circle__mobile2">
+            <img src="Images/circle9.png" alt="" />
+          </div>
+        </ul>
+      </div>
+    </header>
+    <section class="hero__section">
+      <div class="hero__section__header">
+        <span>Everything You Need</span>
+      </div>
+      <div class="hero__section__heading">
+        <span id="secondHeading">to Start Living</span>
+      </div>
+      <div class="hero__section__heading" id="thirdHeading">
+        <span>Zero-Waste</span>
+      </div>
+      <div class="circle1">
+        <img src="Images/circle1.png" alt="circle" />
+      </div>
+      <div class="circle2">
+        <img src="Images/circle2.png" alt="circle" />
+      </div>
+      <div class="circle3">
+        <img src="Images/circle3.png" alt="circle" />
+      </div>
+      <div class="circle4">
+        <img src="Images/circle4.png" alt="circle" />
+      </div>
+      <div class="circle5">
+        <img src="Images/circle5.png" alt="circle" />
+      </div>
+      <div class="circle6">
+        <img src="Images/circle6.png" alt="circle" />
+      </div>
+      <div class="line1">
+        <img src="Images/line1.png" alt="line" />
+      </div>
+      <div class="line2">
+        <img src="Images/line2.png" alt="line" />
+      </div>
+      <div class="line3">
+        <img src="Images/line3.png" alt="line" />
+      </div>
+      <div class="line4">
+        <img src="Images/line4.png" alt="line" />
+      </div>
+      <div class="circle__blur"></div>
+      <div class="hero__section__images">
+        <div class="hero__section__image">
+          <img src="Images/product1.png" alt="product1" />
+        </div>
+        <div class="hero__section__image">
+          <img src="Images/product2.png" alt="product2" />
+        </div>
+        <div class="hero__section__image" id="hero__section__image__centered">
+          <img src="Images/product3.png" alt="product3" />
+        </div>
+        <div class="hero__section__image">
+          <img src="Images/product4.png" alt="product4" />
+        </div>
+        <div class="hero__section__image">
+          <img src="Images/product5.png" alt="product5" />
+        </div>
+      </div>
+      <div class="hero__section__images__mobile">
+        <div class="hero__section__images__block1">
+          <div class="hero__section__image">
+            <img src="Images/product1.png" alt="product1" />
+          </div>
+          <div class="hero__section__image">
+            <img src="Images/product2.png" alt="product2" />
+          </div>
+
+          <div class="hero__section__image">
+            <img src="Images/product4.png" alt="product4" />
+          </div>
+          <div class="hero__section__image">
+            <img src="Images/product5.png" alt="product5" />
+          </div>
+        </div>
+        <div class="hero__section__image" id="hero__section__image__centered">
+          <img src="Images/product3.png" alt="product3" />
+        </div>
+      </div>
+      <div class="hero__section_button">
+        <a href="#">Start now</a>
+      </div>
+      <div class="scroll">
+        <img src="Images/scroll.png" alt="scroll" srcset="" />
+      </div>
+    </section>
+    <section class="how__it__works__section">
+      <div class="how__it__works__section__header">
+        <span>How it works?</span>
+      </div>
+      <div class="how__it__works__section__cards">
+        <div class="how__it__works__section__card">
+          <div class="how__it__works__section__card__image">
+            <img src="Images/card1.png" alt="" />
+          </div>
+          <div class="how__it__works__section__card__header">
+            <span>Join The Movement</span>
+          </div>
+          <div class="how__it__works__section__card__text">
+            <span>
+              Get started by signing up for monthly subscription. We bring you
+              an easy way to start your zero-waste journey
+            </span>
+          </div>
+        </div>
+        <div class="mobile__line">
+          <img src="Images/mobileLine.png" alt="" />
+        </div>
+        <div class="how__it__works__section__card">
+          <div class="how__it__works__section__card__image">
+            <img src="Images/card2.png" alt="" />
+          </div>
+          <div class="how__it__works__section__card__header">
+            <span>Get Your Box</span>
+          </div>
+          <div class="how__it__works__section__card__text">
+            <span>
+              Every month receive your box with essential products, but plastic
+              free and safe for the environment
+            </span>
+          </div>
+        </div>
+        <div class="mobile__line">
+          <img src="Images/mobileLine.png" alt="" />
+        </div>
+        <div class="how__it__works__section__card">
+          <div class="how__it__works__section__card__image">
+            <img src="Images/card3.png" alt="" />
+          </div>
+          <div class="how__it__works__section__card__header">
+            <span>Make a Difference</span>
+          </div>
+          <div class="how__it__works__section__card__text">
+            <span>
+              Small steps can lead to bigger changes, and now you are the
+              change. Let's build community of people who care
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="how__it__works__section__button">
+        <a href="#">Start now</a>
+      </div>
+    </section>
+    <section class="box__of__month__section">
+      <div class="box__of__month__section_image">
+        <img src="Images/boxoxmonthimage.png" alt="" />
+      </div>
+
+      <div class="box__of__month__section__text">
+        <div class="box__of__month__section__text__header">
+          <div class="box__of__month__section__text__header__image">
+            <img src="Images/line.png" alt="" />
+          </div>
+          <div class="box__of__month__section__text__header__text">
+            <span>Box of a month</span>
+          </div>
+        </div>
+        <div class="box__of__month__section__text__paragraph">
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum</span
+          >
+        </div>
+        <div class="box__of__month__section_image__mobile">
+          <img src="Images/boxoxmonthimagemobile.png" alt="" />
+        </div>
+        <div class="box__secondary__image">
+          <img src="Images/boxsecondaryimage.png" alt="" />
+        </div>
+        <div class="box__of__month__section__text__button">
+          <a href="#">See What's Inside</a>
+        </div>
+      </div>
+    </section>
+    <section class="our__mission__section">
+      <div class="our__mission__section__image">
+        <img src="Images/ourmissionimage.png" alt="" />
+      </div>
+      <div class="our__mission__section__centered__text">
+        <div class="our__mission__section__centered__text_top">
+          <div class="our__mission__section__centered__text__top__image">
+            <img src="Images/line.png" alt="" />
+          </div>
+          <div class="our__mission__section__centered__text__top__text">
+            <span>Our Mission</span>
+          </div>
+        </div>
+        <div class="our__mission__section__centered__text__bottom">
+          <span>We are here to help you live greener and more sustainably</span>
+        </div>
+        <div class="our__mission__section__centered__text__bottom2">
+          <span>Small steps matter</span>
+        </div>
+      </div>
+    </section>
+    <section class="recent__posts__section">
+      <div class="recent__posts__section__header__text">
+        <span>Join the conversation an help us create a new world!</span>
+      </div>
+      <div class="recent__posts__section__header__text2">
+        <span>Recent Posts</span>
+      </div>
+      <div class="recent__posts__section__gallery">
+        <img src="Images/gallery.png" alt="" />
+      </div>
+      <div class="recent__posts__section__gallery__mobile">
+        <img src="Images/gallerymobile.png" alt="" />
+      </div>
+    </section>
+    <section class="whats__new__section">
+      <div class="whats__new__section__header__text">
+        <span>What's new in blog?</span>
+      </div>
+      <div class="whats__new__section__cards">
+        <div class="whats__new__section__card">
+          <div class="whats__new__section__card__image">
+            <img src="Images/whatsnewcard1.png" alt="whatsnewcard1" />
+          </div>
+          <div class="whats__new__section__card__header">
+            <span>Why KIWI Eco Box?</span>
+          </div>
+          <div class="whats__new__section__card__line">
+            <img src="Images/line.png" alt="line" />
+          </div>
+          <div class="whats__new__section__card__text">
+            <span>
+              Get started by signing up for monthly subscription. We bring you
+              an easy way to start your zero-waste journey
+            </span>
+          </div>
+          <div class="whats__new__section__card__link">
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <div class="whats__new__section__card">
+          <div class="whats__new__section__card__image">
+            <img src="Images/whatsnewcard2.png" alt="whatsnewcard2" />
+          </div>
+          <div class="whats__new__section__card__header">
+            <span
+              >What Is Inside The April Kiwi Eco Box? Portable Lunch Box</span
+            >
+          </div>
+          <div class="whats__new__section__card__line">
+            <img src="Images/line.png" alt="line" />
+          </div>
+          <div class="whats__new__section__card__text">
+            <span>
+              Every month receive your box with essential products, but plastic
+              free and safe for the environment
+            </span>
+          </div>
+          <div class="whats__new__section__card__link">
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <div class="whats__new__section__card">
+          <div class="whats__new__section__card__image">
+            <img src="Images/whatsnewcard3.png" alt="whatsnewcard3" />
+          </div>
+          <div class="whats__new__section__card__header">
+            <span>Make a Difference</span>
+          </div>
+          <div class="whats__new__section__card__line">
+            <img src="Images/line.png" alt="line" />
+          </div>
+          <div class="whats__new__section__card__text">
+            <span>
+              Small steps can lead to bigger changes, and now you are the
+              change. Let's build community of people who care
+            </span>
+          </div>
+          <div class="whats__new__section__card__link">
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcribe__section">
+      <div class="subscribe__section__text__small">
+        <span>Stay in the know</span>
+      </div>
+      <div class="subscribe__section__text__heading">
+        <div class="subscribe__section__text__heading__image">
+          <img src="Images/line.png" alt="line" />
+        </div>
+        <div class="subscribe__section__text__heading__text">
+          <span>Hear about the latest sneak peaks and spoilers</span>
+        </div>
+      </div>
+      <div class="subscribe__section__image__mobile">
+        <img src="Images/subimagemobile.png" alt="" />
+      </div>
+      <div class="subscribe__section__text__big">
+        <span
+          >Get CAUSEBOX delivered directly
+          <span class="green">to your inbox!</span></span
+        >
+      </div>
+      <div class="subscribe__section__text__input">
+        <div class="subscribe__section__text__input__block">
+          <input type="text" placeholder="Your email adress" />
+          <button id="triggger">SIGN UP</button>
+        </div>
+        <div class="subscribe__section__text__input__small">
+          <span
+            >By clicking "sign up" you agree to receive emails from CAUSEBOX and
+            accept our web terms of use and privacy and cookie policy</span
+          >
+        </div>
+      </div>
+      <div class="subscribeimage">
+        <img src="Images/subscribeimage.png" alt="" />
+      </div>
+      <div id="dialog-content" style="display: none; max-width: 500px">
+        <div class="dialog__wrapper">
+          <div class="dialog__image">
+            <img src="Images/modalimg.png" alt="modalimg" />
+          </div>
+          <div class="dialog__content">
+            <span class="dialog__content__heading"
+              >Thank you for <span class="green">subscribing!</span></span
+            >
+            <div class="dialog__line">
+              <img src="Images/line.png" alt="" />
+            </div>
+            <span class="dialog__content__heading2"
+              >Now you will receive alerts when new news and boxes are
+              released!</span
+            >
+            <div class="dialog__button">
+              <a href="#">good</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients__section">
+      <div class="clients__section__text">
+        <span>What do our</span>
+      </div>
+      <div class="clients__section__text2">
+        <span>clients say</span>
+      </div>
+      <div class="clients__section__wrapper">
+        <div class="clients__section__wrapper__image">
+          <img src="Images/clientsimage.png" alt="" />
+        </div>
+        <div class="clients__section__wrapper__image__mobile">
+          <img src="Images/mobileprofile.png" alt="" />
+        </div>
+        <div class="clients__section__wrapper__review">
+          <div class="clients__section__wrapper__review__name">
+            <div class="clients__section__wrapper__review__name__text">
+              <span>Jessica T.</span>
+            </div>
+            <div class="clients__section__wrapper__review__name__stars">
+              <img src="Images/rating.png" alt="" />
+            </div>
+          </div>
+          <div class="clients__section__wrapper__review__line">
+            <img src="Images/line.png" alt="" />
+          </div>
+          <div class="clients__section__wrapper__review__paragraph">
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </span>
+          </div>
+          <div class="clients__section__wrapper__review__paragraph">
+            <span>
+              Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud
+            </span>
+          </div>
+          <div class="clients__section__wrapper__review__buttons">
+            <a href="#">
+              <img src="Images/Arrow_left.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="Images/Arrow_right.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Boxes</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <div class="footer__logo">
+        <img src="Images/logo.png" alt="" />
+      </div>
+
+      <div class="footer__socialmedia">
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="footer__socialmedia__links">
+          <a href="#"><img src="Images/facebook.png" alt="fb" /></a>
+          <a href="#"><img src="Images/instagram.png" alt="ig" /></a>
+          <a href="#"><img src="Images/twitter.png" alt="tw" /></a>
+          <a href="#"><img src="Images/youtube.png" alt="yt" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
