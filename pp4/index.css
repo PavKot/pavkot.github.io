@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+/*  pink */
+:root {
+  --primary-bg-color: #f50e30;
+  --primary-text-color: #fff;
+  --primary-border-color: #fa002c;
+  --transparent-border-color: #fa002c26;
+  --hover-bg-color: #f4f6f8;
+  --hover-text-color: #000;
+  --hover-link-color: #fa002c;
+  --webkit-scrollbar-thumb-color: #f50e30;
+  --webkit-scrollbar-thumb-hover-color: #b30000;
+}
+
+/* green
+
+:root {
+  --primary-bg-color: #52b788;
+  --primary-text-color: #fff;
+  --primary-border-color: #429e73;
+  --transparent-border-color: #429e7326;
+  --hover-bg-color: #f4f6f8;
+  --hover-text-color: #000;
+  --hover-link-color: #52b788;
+  --webkit-scrollbar-thumb-color: #52b788;
+  --webkit-scrollbar-thumb-hover-color: #429e73;
+}
+
+*/
+
+/* blue 
+
+:root {
+  --primary-bg-color: #001f54;
+  --primary-text-color: #fff;
+  --primary-border-color: #00348f;
+  --transparent-border-color: #00348f26;
+  --hover-bg-color: #f4f6f8;
+  --hover-text-color: #000;
+  --hover-link-color: #002566;
+  --webkit-scrollbar-thumb-color: #001f54;
+  --webkit-scrollbar-thumb-hover-color: #002566;
+}
+*/
+
+/* safron
+
+:root {
+  --primary-bg-color: #ffba08;
+  --primary-text-color: #fff;
+  --primary-border-color: #ffba08;
+  --transparent-border-color: #ffba0826;
+  --hover-bg-color: #f4f6f8;
+  --hover-text-color: #000;
+  --hover-link-color: #ffba08;
+  --webkit-scrollbar-thumb-color: #ffba08;
+  --webkit-scrollbar-thumb-hover-color: #ffba08;
+}
+ */
+
+/* paynes grey  */
+
+:root {
+  --primary-bg-color: #3c3744;
+  --primary-text-color: #fff;
+  --primary-border-color: #3c3744;
+  --transparent-border-color: #3c374426;
+  --hover-bg-color: #f4f6f8;
+  --hover-text-color: #000;
+  --hover-link-color: #3c3744;
+  --webkit-scrollbar-thumb-color: #3c3744;
+  --webkit-scrollbar-thumb-hover-color: #3c3744;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 10px 10px 11px -7px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 11px -7px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 11px -7px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--webkit-scrollbar-thumb-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--webkit-scrollbar-thumb-hover-color);
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--primary-text-color);
+  background: var(--primary-bg-color);
+}
+
+::selection {
+  color: var(--primary-text-color);
+  background: var(--primary-bg-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
