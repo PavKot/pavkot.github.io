@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фонд ПП</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-pagination-bullet {
+        background-color: #fff !important;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #546e34 !important;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        background: #546e34 !important;
+        color: #fff !important;
+        padding: 35px !important;
+        border-radius: 50% !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="#who-section" onclick="toggleMenu();">Про грант</a></li>
+        <li>
+          <a href="#values-section" onclick="toggleMenu();">Цінності фонду</a>
+        </li>
+        <li><a href="#" onclick="toggleMenu();">Подати зявку</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <h2>«ФОНД ПОРОШЕНКА» ВИДІЛЯЄ</h2>
+      <h2 class="ylwText">1.000.000 гривень</h2>
+      <h2>НА ПІДТРИМКУ МОЛОДІЖНИХ ПРОЄКТІВ</h2>
+      <a href="#about" class="btn">Дізнатись більше</a>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <section class="banner" id="banner"></section>
+        </div>
+        <div class="swiper-slide">
+          <section class="banner2" id="banner"></section>
+        </div>
+        <div class="swiper-slide">
+          <section class="banner3" id="banner"></section>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="about-section">
+      <div class="about-section-header">
+        <h2>Про грант</h2>
+        <div class="line"></div>
+      </div>
+      <div class="about-section-content">
+        <div class="about-section-content-text-block">
+          <h2>В рамках програми буде підтримано</h2>
+          <h2 class="ylwText">від 5 до 10 проектів</h2>
+        </div>
+        <div class="about-section-content-text-block">
+          <h2>максимальна сума одного гранту складає</h2>
+          <h2 class="ylwText">200 000 грн </h2>
+        </div>
+        <div class="about-section-content-text-block-small">
+          <h4>
+            Для участі в програмі необхідно заповнити реєстраційну форму на
+            сайті.
+          </h4>
+          <h4>
+            До участі запрошуються офіційно зареєстровані<br />
+            громадські організації згідно з законодавством України
+          </h4>
+          <h4>Заявки приймаються до 12 вересня</h4>
+        </div>
+      </div>
+      <div class="about-section-slider">
+        <div
+          class="swiper mySwiper3"
+          style="height: 500px; padding-bottom: 2rem"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/slides/5.png" /></div>
+            <div class="swiper-slide"><img src="images/slides/6.png" /></div>
+            <div class="swiper-slide"><img src="images/slides/1.png" /></div>
+            <div class="swiper-slide"><img src="images/slides/2.png" /></div>
+            <div class="swiper-slide"><img src="images/slides/3.png" /></div>
+            <div class="swiper-slide"><img src="images/slides/4.png" /></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="who-we-support-section" id="who-section">
+      <div class="who-we-support-section-header">
+        <h2>Кого ми підтримуємо</h2>
+        <div class="line"></div>
+      </div>
+      <div class="who-we-support-section-content">
+        <div class="who-we-support-section-content-block">
+          <div class="who-we-support-section-content-block-img">
+            <img src="images/DAO.png" alt="dao" />
+          </div>
+          <h4>Молоді ветерани</h4>
+          <ul>
+            <li>Працюють з молодими ветеранами та військовослужбовцями. </li>
+            <li>Молодими військовослужбовцями</li>
+          </ul>
+        </div>
+        <div class="who-we-support-section-content-block">
+          <div class="who-we-support-section-content-block-img">
+            <img src="images/University.png" alt="University" />
+          </div>
+          <h4>Студенти</h4>
+          <ul>
+            <li>Хочуть покращити існуючу систему освіти</li>
+            <li>Шукають можливості для неформальної освіти</li>
+            <li>Проводять аналітичні дослідження, які стосуються молоді. </li>
+          </ul>
+        </div>
+        <div class="who-we-support-section-content-block">
+          <div class="who-we-support-section-content-block-img">
+            <img src="images/Graduate.png" alt="Graduate" />
+          </div>
+          <h4>Молоді ВПО</h4>
+          <ul>
+            <li>Підтримка внутрішньо-переміщених осіб (14 – 35 років)  </li>
+            <li>Релокованих університетів</li>
+          </ul>
+        </div>
+      </div>
+      <div class="who-we-support-section-btn">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdO0m6R-06D8CxbIHqNQp2v3vtt06D7VHHokVMFr5ht7uLBtg/viewform?usp=sf_link"
+          class="btn"
+          >Подати заявку</a
+        >
+      </div>
+      <div class="who-we-support-section-text-block">
+        <h4>
+          Фонд Порошенка прагне підтримувати талановиту молодь, громадські та
+          студентські організації, які працюють задля української перемоги
+        </h4>
+        <h4>
+          До міжнародного дня молоді Фонд Порошенка оголошує грантову підтримку
+          в розмірі:
+        </h4>
+        <h4 class="ylwText">1 000 000 гривень</h4>
+        <h4>
+          Для організацій та громадських об’єднань, які поділять цінності Фонду
+          та підпадають під наступні пріоритети
+        </h4>
+      </div>
+    </section>
+    <section class="quote-section">
+      <div class="quote-section-text">
+        <div class="quote-section-text-quote">
+          <img src="images/quote.png" alt="quote" />
+        </div>
+        <h6>
+          Ми шукаємо справжні таланти з громадських та студентських організацій,
+          які працюють з внутрішньо-переміщеними особами, молодими ветеранами та
+          військовослужбовцями, а також працюють над європейською інтеграцією
+          України.
+        </h6>
+        <h6>
+          Країні потрібні ваші світлі голови, ваш патріотизм і сучасне мислення.
+          Інноваційна яскрава візія майбутньої України – це те, що тільки ви
+          можете запропонувати, а головне здійснити. Мені дуже цікаво почути
+          ваші свіжі ідеї. Фонд Порошенка – готовий надати фінансування та
+          підтримку для її реалізації.
+        </h6>
+      </div>
+
+      <div class="quote-section-image">
+        <img src="images/quote-img.png" alt="Poroh" />
+      </div>
+    </section>
+
+    <section class="values-section" id="values-section">
+      <div class="values-section-header">
+        <h2>Цінності Фонду</h2>
+        <div class="line"></div>
+      </div>
+      <div class="values-section-content">
+        <div class="values-section-block">
+          <h4>Рівність та інклюзія</h4>
+          <div class="values-section-block-image">
+            <img src="images/Courthouse.png" alt="" />
+          </div>
+        </div>
+        <div class="values-section-block">
+          <h4>Свобода</h4>
+          <div class="values-section-block-image">
+            <img src="images/Skydiving.png" alt="" />
+          </div>
+        </div>
+        <div class="values-section-block">
+          <h4>Європейська інтеграція</h4>
+          <div class="values-section-block-image">
+            <img src="images/Bank Euro.png" alt="" />
+          </div>
+        </div>
+        <div class="values-section-block">
+          <h4>Міцність</h4>
+          <div class="values-section-block-image">
+            <img src="images/Strength.png" alt="" />
+          </div>
+        </div>
+        <div class="values-section-block">
+          <h4>Розвиток</h4>
+          <div class="values-section-block-image">
+            <img src="images/Development.png" alt="" />
+          </div>
+        </div>
+        <div class="values-section-block">
+          <h4>Безпека</h4>
+          <div class="values-section-block-image">
+            <img src="images/Security Shield Green.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>2023</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+      var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
