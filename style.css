@@ -290,6 +290,19 @@ footer {
   height: 25px;
 }
 
+@media screen and (max-width: 1450px) {
+  .main-container {
+    max-width: 1200px;
+  }
+  .projects-section {
+    max-width: 1200px;
+  }
+
+  footer {
+    max-width: 1200px;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .main-container {
     flex-direction: column;
