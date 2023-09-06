@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9a37f4f5.css",
+    "main.js": "/static/js/main.72ac2b2b.js",
+    "static/media/hero-image.png": "/static/media/hero-image.b2966b6c2eb1a4b7f694.png",
+    "static/media/images1.png": "/static/media/images1.5f1c581c2f3154aa1797.png",
+    "static/media/about.png": "/static/media/about.74e527898db5f7e1fdc5.png",
+    "static/media/images2.png": "/static/media/images2.26463bc19c7d96c51dca.png",
+    "static/media/productImgBig.png": "/static/media/productImgBig.26b1df84c18dec4a45e6.png",
+    "static/media/card10.png": "/static/media/card10.e425383ce601e4ef7d53.png",
+    "static/media/card3.png": "/static/media/card3.d07c44d0a25850746f02.png",
+    "static/media/card6.png": "/static/media/card6.921e26adb0540a7ff2ff.png",
+    "static/media/card4.png": "/static/media/card4.b803d92e8073c906ab59.png",
+    "static/media/card11.png": "/static/media/card11.4763619ce9b5c57b437d.png",
+    "static/media/card7.png": "/static/media/card7.f709f3e1fedfe988a152.png",
+    "static/media/card1.png": "/static/media/card1.45b838b56df8b7e2cb0f.png",
+    "static/media/card12.png": "/static/media/card12.7ce42eb1da0bceb09d4f.png",
+    "static/media/1.png": "/static/media/1.f05fcc86b7a194948243.png",
+    "static/media/card5.png": "/static/media/card5.821e03afca067ca1e29c.png",
+    "static/media/card9.png": "/static/media/card9.21a8f243b7382f187bcf.png",
+    "static/media/3.png": "/static/media/3.575f495fad4fa5f5e6b3.png",
+    "static/media/card8.png": "/static/media/card8.2bbce3ddd0c926f87fca.png",
+    "static/media/5.png": "/static/media/5.ce8b7a919a87315634c0.png",
+    "static/media/4.png": "/static/media/4.1995ce83cb1c48c7e68f.png",
+    "static/media/card2.png": "/static/media/card2.c3944a7552cd746a9da8.png",
+    "static/media/2.png": "/static/media/2.17c3f3df9e255d7ad2a7.png",
+    "static/media/productImg4.png": "/static/media/productImg4.c4aab36f102f13ed990f.png",
+    "static/media/productImg2.png": "/static/media/productImg2.46080aaa6226bcf1d2f8.png",
+    "static/media/productImg3.png": "/static/media/productImg3.8929e512cb9df355539b.png",
+    "static/media/productImg1.png": "/static/media/productImg1.3ee04c1d15e884a03629.png",
+    "index.html": "/index.html",
+    "main.9a37f4f5.css.map": "/static/css/main.9a37f4f5.css.map",
+    "main.72ac2b2b.js.map": "/static/js/main.72ac2b2b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a37f4f5.css",
+    "static/js/main.72ac2b2b.js"
+  ]
+}
