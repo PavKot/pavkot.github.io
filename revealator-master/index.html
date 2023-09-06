@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Revealator Plugin</title>
+	<link rel="stylesheet" href="fm.revealator.jquery.css">
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+		}
+		.section {
+			padding: 2rem;
+			height: 30rem;
+			position: relative;
+			text-align: center;
+		}
+		.section:nth-child(2n+2) {
+			background-color: #eee;
+		}
+		.section .label {
+			position: absolute;
+			padding: .375rem;
+			box-sizing: border-box;
+			color: #999;
+			border: 1px solid #999;
+			top: 0;
+			left: 2rem;
+			background-color: #fff;
+			height: 2rem;
+		}
+		*[class^="revealator"] {
+			height: 15rem;
+			width: 20rem;
+			border: 1px solid #999;
+			background-color: rgba(0,0,0,.1);
+			margin: 0 auto;
+			display: inline-block;
+		}
+	</style>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="fm.revealator.jquery.js"></script>
+</head>
+<body>
+	<div class="section" style="height: 1000px">
+		<h1>
+			Scroll down ↓↓↓
+		</h1>
+	</div>
+	<div class="section">
+		<div class="label">
+			revealator-slideup revealator-delay#
+		</div>
+		<div class="revealator-slideup">
+			Imma slide this in
+		</div>
+		<div class="revealator-slideup revealator-delay1">
+			Imma slide this in
+		</div>
+		<div class="revealator-slideup revealator-delay2">
+			Imma slide this in
+		</div>
+		<div class="revealator-slideup revealator-delay3">
+			Imma slide this in
+		</div>
+	</div>
+	<div class="section">
+		<div class="label">
+			revealator-slidedown revealator-once revealator-delay#
+		</div>
+		<div class="revealator-slidedown revealator-once">
+			Imma slide this in
+		</div>
+		<div class="revealator-slidedown revealator-once revealator-delay1">
+			Imma slide this in
+		</div>
+		<div class="revealator-slidedown revealator-once revealator-delay2">
+			Imma slide this in
+		</div>
+		<div class="revealator-slidedown revealator-once revealator-delay3">
+			Imma slide this in
+		</div>
+	</div>
+	<div class="section">
+		<div class="label">
+			revealator-slideleft revealator-delay#
+		</div>
+		<div class="revealator-slideleft">
+			Imma slide this in from right to left
+		</div>
+		<div class="revealator-slideleft revealator-delay2">
+			Imma slide this in from right to left
+		</div>
+		<div class="revealator-slideleft revealator-delay4">
+			Imma slide this in from right to left
+		</div>
+		<div class="revealator-slideleft revealator-delay6">
+			Imma slide this in from right to left
+		</div>
+	</div>
+	<div class="section">
+		<div class="label">
+			revealator-slideright revealator-delay#
+		</div>
+		<div class="revealator-slideright">
+			Imma slide this in from left to right
+		</div>
+		<div class="revealator-slideright revealator-delay2">
+			Imma slide this in from left to right
+		</div>
+		<div class="revealator-slideright revealator-delay4">
+			Imma slide this in from left to right
+		</div>
+		<div class="revealator-slideright revealator-delay6">
+			Imma slide this in from left to right
+		</div>
+	</div>
+	<div class="section">
+		<div class="label">
+			revealator-zoomin revealator-delay#
+		</div>
+		<div class="revealator-zoomin">
+			Imma zoom this in
+		</div>
+		<div class="revealator-zoomin revealator-delay1">
+			Imma zoom this in
+		</div>
+		<div class="revealator-zoomin revealator-delay2">
+			Imma zoom this in
+		</div>
+		<div class="revealator-zoomin revealator-delay3">
+			Imma zoom this in
+		</div>
+	</div>
+	<div class="section">
+		<div class="label">
+			revealator-zoomout revealator-delay#
+		</div>
+		<div class="revealator-zoomout">
+			Imma zoom this out
+		</div>
+		<div class="revealator-zoomout revealator-delay1">
+			Imma zoom this out
+		</div>
+		<div class="revealator-zoomout revealator-delay2">
+			Imma zoom this out
+		</div>
+		<div class="revealator-zoomout revealator-delay3">
+			Imma zoom this out
+		</div>
+	</div>
+	<div class="section">
+		<div class="label">
+			revealator-fade revealator-delay# revealator-duration10
+		</div>
+		<div class="revealator-fade revealator-duration10">
+			Imma fade this in
+		</div>
+		<div class="revealator-fade revealator-delay2 revealator-duration10">
+			Imma fade this in
+		</div>
+		<div class="revealator-fade revealator-delay4 revealator-duration10">
+			Imma fade this in
+		</div>
+		<div class="revealator-fade revealator-delay6 revealator-duration10">
+			Imma fade this in
+		</div>
+	</div>
+	<div class="section">
+		<div class="label">
+			revealator-rotateleft revealator-delay#
+		</div>
+		<div class="revealator-rotateleft">
+			Imma rotate this in to the left
+		</div>
+		<div class="revealator-rotateleft revealator-delay1">
+			Imma rotate this in to the left
+		</div>
+		<div class="revealator-rotateleft revealator-delay2">
+			Imma rotate this in to the left
+		</div>
+		<div class="revealator-rotateleft revealator-delay3">
+			Imma rotate this in to the left
+		</div>
+	</div>
+	<div class="section">
+		<div class="label">
+			revealator-rotateright revealator-delay#
+		</div>
+		<div class="revealator-rotateright">
+			Imma slide this in to the right
+		</div>
+		<div class="revealator-rotateright revealator-delay1">
+			Imma slide this in to the right
+		</div>
+		<div class="revealator-rotateright revealator-delay2">
+			Imma slide this in to the right
+		</div>
+		<div class="revealator-rotateright revealator-delay3">
+			Imma slide this in to the right
+		</div>
+	</div>
+	<div class="section">
+		<div class="label">
+			End
+		</div>
+	</div>
+</body>
+</html>
