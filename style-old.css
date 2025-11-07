@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 10px 10px 11px -7px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 11px -7px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 11px -7px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #185d8b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a7cbf;
+}
+
+::selection {
+  background-color: #185d8b;
+  color: #ffffff;
+}
+
+body {
+  background: #040f16;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 65px;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+}
+
+.main-container h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ddeef9;
+}
+
+.main-container h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 62px;
+  color: #ddeef9;
+  margin-top: 15px;
+}
+
+.main-container h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ddeef9;
+  margin-top: 50px;
+}
+
+.main-container-content-follow p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ddeef9;
+}
+
+.download-btn {
+  background: #185d8b;
+  border-radius: 10px;
+  padding: 14px 13px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+.main-container-content-links {
+  display: flex;
+  gap: 16px;
+}
+
+.main-container-content-follow {
+  display: flex;
+  margin-top: 24px;
+  padding-bottom: 64px;
+  align-items: center;
+  gap: 36px;
+}
+
+.main-container-content {
+  max-width: 500px;
+}
+
+.main-container-content-links a {
+  transition: 0.3s ease-in-out;
+}
+
+.main-container-content-links a:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+.interested-to-work {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background: #185d8b;
+  border-radius: 10px;
+  padding: 36px;
+  margin-top: 64px;
+}
+
+.interested-to-work h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 62px;
+  color: #ddeef9;
+}
+
+.contact-btn {
+  background: #ddeef9;
+  border-radius: 10px;
+  padding: 14px 13px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #040f16;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.projects-section {
+  padding-top: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.projects-section .projects-section-header {
+  text-align: center;
+}
+
+.projects-section h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 62px;
+  color: #ddeef9;
+  margin-top: 15px;
+}
+
+.projects-section-project {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding-top: 64px;
+}
+
+.projects-section-project-image {
+  width: 50%;
+}
+
+.projects-section-project-image img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.projects-section-project-content h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 62px;
+  color: #ddeef9;
+}
+
+.projects-section-project-content p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ddeef9;
+}
+
+.live-btn {
+  background: #185d8b;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.github-btn {
+  background: #185d8b;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.github-btn:hover,
+.live-btn:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+.projects-section-project-content-btns {
+  padding-top: 24px;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}
+
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-content-name h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 62px;
+  color: #ddeef9;
+}
+
+.footer-content-links {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.footer-content-links img {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 1450px) {
+  .main-container {
+    max-width: 1200px;
+  }
+  .projects-section {
+    max-width: 1200px;
+  }
+
+  footer {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .main-container {
+    flex-direction: column;
+    padding: 36px;
+    max-width: unset;
+    gap: 35px;
+  }
+
+  .main-container-profile img {
+    width: 100%;
+  }
+
+  .interested-to-work {
+    flex-direction: column;
+    padding: 36px;
+    gap: 35px;
+    max-width: 90%;
+  }
+
+  /* projects adaptive */
+
+  .projects-section-project {
+    flex-direction: column;
+    gap: 35px;
+    padding: 30px;
+  }
+
+  .projects-section-project-image {
+    width: 100%;
+  }
+
+  .projects-section-project-content {
+    width: 100%;
+  }
+
+  .projects-section-project-content-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .projects-section-project-content-btns a {
+    margin-top: 24px;
+  }
+
+  .projects-section-project-content-btns a:first-child {
+    margin-top: 0;
+  }
+
+  .projects-section-project-content-btns a:last-child {
+    margin-top: 0;
+  }
+
+  .projects-section-project-content h2 {
+    font-size: 24px;
+    line-height: unset;
+  }
+
+  footer {
+    padding: 36px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .main-container-content {
+    height: 75vh;
+  }
+}
