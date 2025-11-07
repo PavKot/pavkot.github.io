@@ -1004,6 +1004,51 @@ section {
         display: none !important;
     }
 
+    /* Disable all animations on mobile */
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    /* Keep only essential transitions */
+    .nav-menu {
+        transition: transform 0.3s ease !important;
+    }
+
+    .hamburger span {
+        transition: all 0.3s ease !important;
+    }
+
+    /* Remove scroll animations */
+    .reveal-on-scroll {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    .fade-in,
+    .fade-in-delay-1,
+    .fade-in-delay-2,
+    .fade-in-delay-3,
+    .fade-in-delay-4 {
+        animation: none !important;
+        opacity: 1 !important;
+    }
+
+    /* Disable gradient circles animation */
+    .gradient-circle {
+        animation: none !important;
+        display: none;
+    }
+
+    /* Disable image float animation */
+    .image-container img {
+        animation: none !important;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
     .nav-menu {
         position: fixed;
         top: 70px;

@@ -128,25 +128,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ===== INTERSECTION OBSERVER FOR SCROLL ANIMATIONS =====
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-};
+// Disable on mobile
+if (window.innerWidth > 768) {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-        }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+            }
+        });
+    }, observerOptions);
+
+    // Observe all elements with reveal-on-scroll class
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    revealElements.forEach(element => {
+        observer.observe(element);
     });
-}, observerOptions);
-
-// Observe all elements with reveal-on-scroll class
-const revealElements = document.querySelectorAll('.reveal-on-scroll');
-revealElements.forEach(element => {
-    observer.observe(element);
-});
+} else {
+    // On mobile, immediately show all elements
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    revealElements.forEach(element => {
+        element.classList.add('revealed');
+    });
+}
 
 // ===== ACTIVE NAV LINK ON SCROLL =====
 const sections = document.querySelectorAll('section[id]');
@@ -192,15 +201,18 @@ function typeWriter(element, text, speed = 50) {
 }
 
 // ===== PARALLAX EFFECT FOR GRADIENT CIRCLES =====
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const circles = document.querySelectorAll('.gradient-circle');
-    
-    circles.forEach((circle, index) => {
-        const speed = 0.1 + (index * 0.05);
-        circle.style.transform = `translateY(${scrolled * speed}px)`;
+// Disable on mobile
+if (window.innerWidth > 768) {
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const circles = document.querySelectorAll('.gradient-circle');
+        
+        circles.forEach((circle, index) => {
+            const speed = 0.1 + (index * 0.05);
+            circle.style.transform = `translateY(${scrolled * speed}px)`;
+        });
     });
-});
+}
 
 // ===== CURSOR GLOW EFFECT (OPTIONAL - ADVANCED) =====
 const createCursorGlow = () => {
@@ -252,46 +264,52 @@ const createCursorGlow = () => {
 // }
 
 // ===== PROJECT CARDS TILT EFFECT =====
-const projectCards = document.querySelectorAll('.project-card');
+// Disable on mobile
+if (window.innerWidth > 768) {
+    const projectCards = document.querySelectorAll('.project-card');
 
-projectCards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+    projectCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+            
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+        });
         
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        
-        const rotateX = (y - centerY) / 20;
-        const rotateY = (centerX - x) / 20;
-        
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+        });
     });
-    
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-    });
-});
+}
 
 // ===== SKILL CARDS ANIMATION ON HOVER =====
-const skillCards = document.querySelectorAll('.skill-card');
+// Disable on mobile
+if (window.innerWidth > 768) {
+    const skillCards = document.querySelectorAll('.skill-card');
 
-skillCards.forEach(card => {
-    const icon = card.querySelector('.skill-icon');
-    
-    card.addEventListener('mouseenter', () => {
-        if (icon) {
-            icon.style.transform = 'scale(1.1) rotate(5deg)';
-        }
+    skillCards.forEach(card => {
+        const icon = card.querySelector('.skill-icon');
+        
+        card.addEventListener('mouseenter', () => {
+            if (icon) {
+                icon.style.transform = 'scale(1.1) rotate(5deg)';
+            }
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            if (icon) {
+                icon.style.transform = 'scale(1) rotate(0deg)';
+            }
+        });
     });
-    
-    card.addEventListener('mouseleave', () => {
-        if (icon) {
-            icon.style.transform = 'scale(1) rotate(0deg)';
-        }
-    });
-});
+}
 
 // ===== STATS COUNTER ANIMATION =====
 function animateValue(element, start, end, duration) {
