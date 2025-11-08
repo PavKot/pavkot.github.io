@@ -54,7 +54,7 @@ body {
     position: fixed;
     pointer-events: none;
     z-index: 9999;
-    transition: all 0.1s ease;
+    transition: none;
     transform: translate(-50%, -50%);
 }
 
@@ -539,6 +539,11 @@ img {
     position: relative;
     width: 100%;
     max-width: 450px;
+    transition: all 0.3s ease;
+}
+
+.image-container:hover {
+    transform: translateY(-10px);
 }
 
 .image-glow {
@@ -553,6 +558,12 @@ img {
     filter: blur(60px);
     opacity: 0.4;
     z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.image-container:hover .image-glow {
+    opacity: 0.6;
+    filter: blur(70px);
 }
 
 .image-container img {
@@ -560,6 +571,11 @@ img {
     border-radius: 2rem;
     box-shadow: var(--shadow-2xl);
     animation: float 6s ease-in-out infinite;
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
 }
 
 .scroll-indicator {
@@ -740,6 +756,62 @@ section {
 /* ===== EXPERIENCE SECTION ===== */
 .experience {
     background: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    top: -200px;
+    left: -100px;
+    filter: blur(60px);
+    z-index: 0;
+    animation: float 20s ease-in-out infinite;
+}
+
+.experience::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    bottom: -150px;
+    right: -100px;
+    filter: blur(70px);
+    z-index: 0;
+    animation: float 25s ease-in-out infinite reverse;
+}
+
+.experience .gradient-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.experience .gradient-circle:nth-child(1) {
+    width: 400px;
+    height: 400px;
+    background: var(--gradient-1);
+    top: 20%;
+    right: 10%;
+    animation: float 30s ease-in-out infinite;
+}
+
+.experience .gradient-circle:nth-child(2) {
+    width: 300px;
+    height: 300px;
+    background: var(--gradient-2);
+    bottom: 30%;
+    left: 5%;
+    animation: float 35s ease-in-out infinite reverse;
 }
 
 .timeline {
@@ -747,6 +819,7 @@ section {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 0;
+    z-index: 1;
 }
 
 .timeline::before {
@@ -774,7 +847,7 @@ section {
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
-    text-align: right;
+    text-align: left;
 }
 
 .timeline-dot {
@@ -860,14 +933,14 @@ section {
 }
 
 .timeline-item:nth-child(odd) .timeline-list li {
-    padding-left: 0;
-    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 0;
 }
 
 .timeline-item:nth-child(odd) .timeline-list li::before {
-    left: auto;
-    right: 0;
-    content: '←';
+    left: 0;
+    right: auto;
+    content: '→';
 }
 
 .timeline-tags {
@@ -878,7 +951,7 @@ section {
 }
 
 .timeline-item:nth-child(odd) .timeline-tags {
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 /* Animation for timeline items */

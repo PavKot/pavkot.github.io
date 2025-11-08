@@ -24,17 +24,15 @@ if (window.innerWidth > 768) {
     
     // Animate cursor
     function animate() {
-        // Main cursor follows quickly
-        const dx = mouseX - cursorX;
-        const dy = mouseY - cursorY;
-        cursorX += dx * 0.2;
-        cursorY += dy * 0.2;
+        // Main cursor follows instantly (no interpolation)
+        cursorX = mouseX;
+        cursorY = mouseY;
         
         // Follower follows smoothly
         const fdx = mouseX - followerX;
         const fdy = mouseY - followerY;
-        followerX += fdx * 0.1;
-        followerY += fdy * 0.1;
+        followerX += fdx * 0.4;
+        followerY += fdy * 0.4;
         
         cursor.style.left = cursorX + 'px';
         cursor.style.top = cursorY + 'px';
