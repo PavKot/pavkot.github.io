@@ -1,3 +1,9 @@
+// ===== DYNAMIC YEAR =====
+const yearElement = document.getElementById('year');
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
+
 // ===== CUSTOM CURSOR =====
 if (window.innerWidth > 768) {
     const cursor = document.createElement('div');
@@ -384,6 +390,3 @@ emailLinks.forEach(link => {
         console.log('Email link clicked');
     });
 });
-
-// ===== DYNAMIC YEAR =====
-document.getElementById('year').textContent = new Date().getFullYear();
