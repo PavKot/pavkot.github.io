@@ -384,3 +384,6 @@ emailLinks.forEach(link => {
         console.log('Email link clicked');
     });
 });
+
+// ===== DYNAMIC YEAR =====
+document.getElementById('year').textContent = new Date().getFullYear();
