@@ -217,6 +217,13 @@ function HeroSection({
       falloff="72%"
     >
       <header id="home" className="hero-section">
+        <img
+          className="hero-backdrop-portrait"
+          src="/assets/profile-pic-new.png"
+          alt=""
+          aria-hidden="true"
+        />
+
         <FadeIn y={-20} className="hero-header-stack">
           <nav className="hero-nav" aria-label="Primary navigation">
             <a href="#about" aria-label="About" title="About">

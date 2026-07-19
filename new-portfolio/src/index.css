@@ -212,6 +212,21 @@ body,
   filter: blur(12px);
 }
 
+.hero-backdrop-portrait {
+  position: absolute;
+  z-index: 0;
+  bottom: clamp(-20rem, -23vh, -10rem);
+  left: clamp(-31rem, -27vw, -17rem);
+  width: clamp(720px, 66vw, 1080px);
+  max-width: none;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.09;
+  filter: saturate(0.75) contrast(0.9);
+  -webkit-mask-image: radial-gradient(circle at 48% 48%, #000 30%, transparent 73%);
+  mask-image: radial-gradient(circle at 48% 48%, #000 30%, transparent 73%);
+}
+
 .hero-header-stack {
   position: relative;
   z-index: 30;
@@ -2008,6 +2023,14 @@ html[data-theme="light"] .experience-section {
   .hero-section {
     min-height: max(860px, 100svh);
     padding-bottom: 1.5rem;
+  }
+
+  .hero-backdrop-portrait {
+    top: 9rem;
+    bottom: auto;
+    left: -118vw;
+    width: min(205vw, 780px);
+    opacity: 0.045;
   }
 
   .hero-nav {
