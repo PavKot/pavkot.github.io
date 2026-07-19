@@ -644,6 +644,7 @@ function ProjectCard({
   total: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
+  const projectUrl = project.url ?? project.image;
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
@@ -664,8 +665,8 @@ function ProjectCard({
             <h3>{project.title}</h3>
             <p>{project.description}</p>
           </div>
-          <a className="live-button" href={project.url} target="_blank" rel="noreferrer">
-            Live project <ExternalLink className="h-4 w-4" />
+          <a className="live-button" href={projectUrl} target="_blank" rel="noreferrer">
+            {project.url ? "Live project" : "View concept"} <ExternalLink className="h-4 w-4" />
           </a>
         </div>
 
@@ -675,7 +676,7 @@ function ProjectCard({
             <div className="project-tags-on-image">
               {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
             </div>
-            <img src={project.image} alt="" loading="lazy" />
+            <img src={project.secondaryImage ?? project.image} alt="" loading="lazy" />
           </div>
           <img className="project-main-image" src={project.image} alt={`${project.title} project preview`} loading="lazy" />
         </div>
@@ -685,7 +686,7 @@ function ProjectCard({
 }
 
 function ProjectsSection() {
-  const featured = projects.slice(0, 3);
+  const featured = projects.slice(0, 4);
   return (
     <section id="projects" className="projects-section">
       <FadeIn>
@@ -712,7 +713,7 @@ function ProjectsSection() {
         <div className="archive-grid">
           {projects.map((project, index) => (
             <FadeIn key={project.title} delay={(index % 3) * 0.06}>
-              <a className="archive-card group" href={project.url} target="_blank" rel="noreferrer">
+              <a className="archive-card group" href={project.url ?? project.image} target="_blank" rel="noreferrer">
                 <div className="archive-image-wrap">
                   <img src={project.image} alt={`${project.title} preview`} loading="lazy" />
                   <span className="archive-open"><ArrowUpRight /></span>

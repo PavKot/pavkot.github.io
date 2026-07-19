@@ -2,7 +2,8 @@ export type Project = {
   title: string;
   description: string;
   image: string;
-  url: string;
+  secondaryImage?: string;
+  url?: string;
   category: string;
   tags: string[];
 };
@@ -31,6 +32,15 @@ export const projects: Project[] = [
     url: "https://droam.com/",
     category: "Client Website",
     tags: ["WordPress", "HTML5", "CSS3", "JavaScript"],
+  },
+  {
+    title: "Aether",
+    description: "An immersive 3D motion website blending cinematic visuals with fluid, interactive storytelling.",
+    image: "/assets/project19.png",
+    secondaryImage: "/assets/project19_1.png",
+    url: "https://pavkot.github.io/aether/",
+    category: "3D / Motion",
+    tags: ["React", "Three.js", "GSAP", "WebGL"],
   },
   {
     title: "Horobchyk Mobile App",
@@ -185,7 +195,7 @@ export const experiences = [
   },
 ];
 
-export const marqueeImages = Array.from(
-  { length: 18 },
-  (_, index) => `/assets/project${index + 1}.png`,
-);
+export const marqueeImages = [
+  ...Array.from({ length: 19 }, (_, index) => `/assets/project${index + 1}.png`),
+  "/assets/project19_1.png",
+];
